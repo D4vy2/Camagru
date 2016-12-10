@@ -1,0 +1,281 @@
+h1 {
+	text-align: center;
+	color: #fcf3b3;
+	font-family: "Comic Sans MS";
+	border-style: dotted;
+	border-color: #fcf3b3;
+	margin-left: 30%;
+	margin-right: 30%;
+	padding-bottom: 0.5%;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	text-align: center;
+	color: #DCEDC1; 
+	font-family: "Comic Sans MS";
+	font-style: italic;
+}
+
+h3 {
+	text-align: center;
+	/* color: #DCEDC1;  */
+	color: white;
+	font-family: "Trebuchet MS";
+}
+body {
+	background-image: url("background1.jpg");
+	position: relative;
+}
+
+label {
+	color: white;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+td {
+	text-align: right;
+}
+
+p {
+	color: #fc9f27;
+	text-align: center;
+}
+
+
+input[type=submit] {
+	width: 20em;
+	height: 3em;
+	border-radius: 25px;
+	cursor: pointer;
+	color: white;
+	background-color: green;
+}
+
+input[type=text] {
+	width: 15em;
+	height: 2em;
+	margin-left: 0.5em;
+	padding-left: 0.5em;
+	font-size: 14px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type=email] {
+	width: 15em;
+	height: 2em;
+	margin-left: 0.5em;
+	padding-left: 0.5em;
+	font-size: 14px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type=password] {
+	width: 15em;
+	height: 2em;
+	margin-left: 0.5em;
+	padding-left: 0.5em;
+	font-size: 14px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#confirm {
+	width: 10em;
+	height: 3em;
+	background-color: #DCEDC1;
+	color: black;
+}
+
+#menuGallery {
+	background-color: darkslategrey;
+	padding-bottom: 1em;
+	padding-top: 0.5em;
+	border: 2px solid dimgrey;
+}
+
+#menuPhotos {
+	background-color: darkslategray;
+	padding-bottom: 1em;
+	padding-top: 0.5em;
+	border: 2px solid dimgrey;
+	margin-top: -0.9px;
+
+}
+
+#getstarted {
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-family: "Impact";
+	text-align: center;
+	font-size: 4em;
+	border: 9px solid white;
+	background-color: black;
+}
+
+#gallery, #myphotos {
+	color: #DCEDC1;
+	font-family: "Comic sans MS";
+	text-align: center;
+	font-size: 2em;
+	display: block;
+	text-decoration: none;
+}
+
+#section {
+	background-image: url("mosaic.jpg"); 
+	background-attachment: "fixed";
+	border: 15px solid #fcf3b3;
+	border-radius: 30px;
+	padding: 10px;
+}
+
+#img_gallery {
+	border: 5px solid wheat;
+}
+
+#comment_box {
+	border-radius: 5px;
+	color: black;
+	background-color: lightgrey;
+	font-size: 15px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	width: 40em;
+	margin: auto;
+	padding-top: 2em;
+	padding-left: 2em;
+	text-align: left;
+	box-shadow:20px 20px 50px 20px;	
+}
+
+#comments {
+	/*background-color: white;*/
+	padding-top: 2em;
+	padding-bottom: 2em;
+	background-image: url('mosaic.jpg');
+}
+
+#send_comment {
+	background-color: darkorange;
+}
+
+#nblike {
+	font-family: monospace;
+	font-size: 15px;
+	color: black;
+}
+
+#footer {
+	background-color: #202126;
+	color: #5CF1B3;
+	text-align: center;
+	margin-top: 2em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+#footerAbsolute {
+	position: absolute;
+	bottom: 0;
+
+}
+
+#startbutton {
+	width: 15em;
+	height: 4em;
+	-webkit-appearance: none;
+}
+
+#savebutton {
+	width: 15em;
+	height: 4em;
+	-webkit-appearance: none;
+}
+
+#makebutton {
+	width: 15em;
+	height: 4em;
+	-webkit-appearance: none;
+}
+
+#loadmore {
+	width: 15em;
+	height: 4em;
+	-webkit-appearance: none;
+}
+
+#lbUpload {
+	-webkit-appearance: none;
+	width: 15em;
+	height: 4em;
+	background-color: black;
+}
+
+
+#lastPics {
+	position: relative;
+	float: right;
+	background-image: url("paper.jpg");
+	right: 0;
+	max-width: 9.5em;
+}
+
+#lastImg {
+	width: 9em;
+	height: auto;
+	display: inline-block;
+}
+
+#form_filter {
+	max-width: 345px;
+}
+
+.empty {
+	color: orange;
+	font-family: "Comic sans MS";
+	text-align: center;
+	font-size: 2em;
+	display: block;
+	text-decoration: none;
+	max-width: 1080px;
+	margin: auto;
+}
+
+.myphotos {
+	background: black;
+	width: 60%;	
+	margin: auto;
+	border-radius: 15px;
+	padding-bottom: 5em;
+}
+
+.mycenter {
+	position: relative;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+.center {
+	width: 50%;
+    margin: 0 auto; 
+}
+
+.filter {
+	border: solid white;
+	width: 5em;
+	height: 3em;
+}
+
+textarea {
+	resize: none;
+	width: 30em;
+	height: 7em;
+	font-style: bold;
+	font-size: 14px;
+	padding: 10px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
