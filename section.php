@@ -4,9 +4,17 @@
 <section class="center" id="section">
 
 <label for="file" id="lbUpload">
-<input type="file" id="upload" accept="image/*" name="upload"/><br>
+<input type="file" id="upload" accept="image/*" name="upload"/>
+<button id="preview">Preview</button>
+<br/>
 </label>
-<video id="video"></video>
+<div id="video-container">
+	<video id="video"></video>
+	<div id="overlay" style="display: none">
+		<span id="nofilter" display: none; text-align: center;>	&bull;  No filter selected   &bull;</span>
+		<img id="previewImage" src=""/>	
+	</div>
+</div>
 <div id="lastPics">
 <h3 style="color: black; font-family: Didot; font-style: italic;">Your last 5 pics</h3>
 <?php
@@ -56,7 +64,6 @@ try {
 	<button type="submit" value="" id="makebutton" name="makebutton" style="display: none;">Make it !</button>
 	<input type="button" name="savebutton" id="savebutton" value="Save it!" style=""/>
 	</form>
-
 	<canvas id="canvas">
 		<p>Your browser does not support the canvas, please update.</p>
 	</canvas>

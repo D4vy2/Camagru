@@ -215,11 +215,6 @@ function reloadImages() {
         xhr.send();
     }
 
-	// filters.addEventListener('click', function(ev){
-	// 	startbutton.disabled = false;	
-	// 	makebutton.disabled = false;
-	// }, false);
-
 	f1.addEventListener('click', function(ev){
 		startbutton.disabled = false;	
 		makebutton.disabled = false;
@@ -283,8 +278,39 @@ function reloadImages() {
 		startbutton.style.display = "none";
 		makebutton.style.display = "inline";
 		savebutton.style.display = "none";
+		previewbutton.style.display = "none";
+		overlay.style.display = "none";
 
 	}, false);
 
+	// partie Preview
+	var previewbutton = document.querySelector('#preview');
+	var overlay = document.querySelector('#overlay');
+	var nofilter = document.querySelector('#nofilter');
+	var oldFilter = "";
+	previewbutton.addEventListener("click", function(){
+		var previewImg = document.querySelector('#previewImage');
+		oldFilter = previewImg.src;
+		var previewFilter = checkFilter();
+		if (previewFilter == undefined) {
+			nofilter.style.display = 'block';
+		}
+		else {
+			nofilter.style.display = 'none';
+			previewImg.setAttribute('src', previewFilter);
+		}
+		if (overlay.style.display == 'none') {
+			overlay.style.display = "block";
+		}
+		else if (oldFilter == ('http://localhost:8080/camagru/' + previewFilter)) {
+			overlay.style.display = "none";
+		}
+		else if ( previewFilter != undefined) {
+			previewImg.setAttribute('src', previewFilter);
+		}
+		else {
+			overlay.style.display = "none";
+		}
+	}, false);
 
 })();
